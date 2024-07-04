@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide the quote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="hidebox()">Click For Quote</button>
+    <div id="quote" >
+        <q>Education is most powerful weapon which you can use to change the world</q>
+    </div>
+    <script>
+        function hidebox(){
+            var x=document.getElementById('quote');
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
